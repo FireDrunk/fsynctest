@@ -80,9 +80,9 @@ int main(int argc, const char* argv[] )
 
 		for (int x=0; x <= nr_of_writes; x++)
 		{
-	    printf("[%d/%d] Writing ASYNC in file: [%d]\n", x,nr_of_writes,file_nr);
-	 	  writeAsync("*", files[file_nr]);
-    }
+			printf("[%d/%d] Writing ASYNC in file: [%d]\n", x,nr_of_writes,file_nr);
+			writeAsync("*", files[file_nr]);
+		}
 
 		printf("[%d/%d] Writing SYNC in file: [%d]\n", x,max,log_file_nr);
 		ss << "Written to File: #[" << file_nr << "]";
